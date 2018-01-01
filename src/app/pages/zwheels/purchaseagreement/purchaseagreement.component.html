@@ -1,1 +1,4 @@
-<app-tablegrid [columns]="tableColumns" [rows]="rowsData"></app-tablegrid>
+<button type="button" class="btn btn-primary" routerLink="">
+  Single Toggle
+</button>
+<app-tablegrid [columns]="tableColumns" [rows]="rowsData" (follow)="go()"></app-tablegrid>

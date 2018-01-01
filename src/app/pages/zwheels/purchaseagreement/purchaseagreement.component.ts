@@ -33,9 +33,13 @@ export class PurchaseagreementComponent implements OnInit {
     }
   ];
 
+  searchtext = '';
   constructor() { }
 
   ngOnInit() {
   }
 
+  go() {
+
+  }
 }

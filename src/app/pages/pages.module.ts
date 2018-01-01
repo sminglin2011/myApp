@@ -13,12 +13,14 @@ import { routing } from './pages.routing';
   imports: [
     CommonModule,
     routing,
-    CollapseModule
+    CollapseModule,
   ],
   declarations: [
      PageComponent, HeaderComponent, HomeComponent
   ],
   exports: [
+  ],
+  providers: [
   ]
 })
 export class PagesModule { }

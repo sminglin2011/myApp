@@ -1,3 +1,5 @@
-<p>
-  userstaff works!
-</p>
+<app-addbutton [url]="addButtonUrl" [name]="addButtonName"></app-addbutton>
+
+<app-z-datatable [columns]="tableColumns" [rows]="rowsData" [datatable]="rowsData">
+</app-z-datatable>
+<app-z-input (zClick)="go()"></app-z-input>

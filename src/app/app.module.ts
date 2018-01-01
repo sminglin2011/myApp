@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
+import { TestoutputComponent } from './testoutput/testoutput.component';
 
 const routing: Routes = [
   {
@@ -14,6 +15,7 @@ const routing: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    TestoutputComponent,
   ],
   imports: [
     BrowserModule,
