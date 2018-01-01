@@ -1,0 +1,12 @@
+<!-- <a class="btn btn-primary" (click)="isCollapsed = !isCollapsed" [routerLink]="menuitem.url">
+    {{menuitem.title}}
+</a> -->
+<div *ngIf="menuitem.url == ''"><a (click)="isCollapsed = !isCollapsed">{{menuitem.title}}</a></div>
+<div *ngIf="menuitem.url != ''"><a [(routerLink)]="menuitem.url">{{menuitem.title}}</a></div>
+<div (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="isCollapsed" class="card card-block card-header">
+    <ul *ngIf="menuitem.child">
+        <li *ngFor="let m of menuitem.child">
+            <app-sidemenu [menuitem]="m"></app-sidemenu>
+        </li>
+    </ul>
+</div>
