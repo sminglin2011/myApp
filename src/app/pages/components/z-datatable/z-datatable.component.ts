@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { AfterContentInit, AfterViewInit, AfterViewChecked, AfterContentChecked } from '@angular/core/src/metadata/lifecycle_hooks';
 /**
- * @description 自定义 datatable 组件 传 columns 和 rows test
+ * @description 自定义 datatable 组件 传 columns 和 rows
  * @author Sming
  * @export
  * @class ZDatatableComponent
